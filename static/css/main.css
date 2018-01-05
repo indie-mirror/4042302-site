@@ -94,3 +94,7 @@ footer {
 img {
     max-width: 100%;
 }
+
+h1 {
+  font-size: 12vh !important;
+}
