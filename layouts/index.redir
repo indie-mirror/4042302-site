@@ -1,4 +1,0 @@
-# Netlify redirects
-# Redirect 
-/* /404.html/:splat 404
-/404.html https://ind.ie/:splat 302

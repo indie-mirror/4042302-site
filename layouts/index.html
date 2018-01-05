@@ -1,0 +1,35 @@
+{{ partial "header" . }}
+
+<main>
+
+  <div class="intro" style='transform: translateY(0)'>
+
+      {{ with .Site.Params.profilePic }} <img class="profile" src="{{ . }}"> {{ end }}
+
+      <h1>{{ .Site.Title }}</h1>
+
+      <h2 style='margin-bottom: 1em;'>{{ markdownify .Site.Params.Description }}</h2>
+
+      <pre style='margin-bottom: 2em;'><code style='text-align: left;'># nginx
+location / {
+  error_page 404 =302 https://2017.4042302.org$request_uri;
+  try_files $uri $uri/ =404;
+}</code></pre>
+
+    <div class='details' style='text-align: left;'>
+      <p><strong>What if links never died?</strong> What if we didn’t break the Web? What if every 404 became a 302?</p>
+      <p>It’s possible. And it’s easy.</p>
+      <p>Try it out:</p>
+      <ul>
+        <li>A link from 2017: <a href='/an-older-page'>An older page</a></li>
+        <li>A link from 1997: <a href='/me.htm'>Me</a></li>
+      </ul>
+
+    <p><a href='/details'>Get started.</a></p>
+    </div>
+
+  </div>
+
+</main>
+
+{{ partial "footer" . }}
