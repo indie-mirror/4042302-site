@@ -28,4 +28,4 @@ server {
 
 ## Others
 
-If you’d like to help, [get involved](/get-involved) and contribute by sending pull requests detailing how to implement 404 → 302 on other servers and platforms.
+If you’d like to help, get involved and contribute by sending pull requests detailing how to implement 404 → 302 on other servers and platforms.
