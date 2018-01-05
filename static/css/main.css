@@ -5,7 +5,7 @@ html, body {
 body {
     padding-top: 55px;
     display: flex;
-    text-align: center;
+    text-align: left;
     flex-direction: column;
 }
 
@@ -23,6 +23,10 @@ main {
 }
 
 /*home page*/
+
+.intro {
+  text-align: center;
+}
 
 .intro > h1 {
     color: #212121;
