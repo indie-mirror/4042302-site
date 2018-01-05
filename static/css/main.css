@@ -100,5 +100,6 @@ img {
 }
 
 h1 {
+  text-align: center;
   font-size: 12vh !important;
 }
