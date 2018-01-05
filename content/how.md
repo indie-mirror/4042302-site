@@ -4,7 +4,7 @@ date: 2018-01-05T21:01:29+01:00
 draft: true
 ---
 
-1. Back up your current site to a subdomain (e.g., `2017.your.site`).
+1. Backup your current site to a subdomain (e.g., `2017.your.site`).
 
 2. Add a 404 to 302 rule (see below) to your latest version.
 

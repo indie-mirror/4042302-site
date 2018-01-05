@@ -34,8 +34,10 @@ So what’s a developer to do?
 
 Here’s the solution I came up with:
 
-1. Back up the current site to a subdomain (e.g., 2017.ar.al)
-2. Make my 404s into 302s that point to the previous version of the site
+1. Backup the current site to a subdomain (e.g., `2017.ar.al`)
+
+2. Make my 404s into 302s that point to the previous version of the site.
+
 3. If I change the site again in the future, rinse and repeat.
 
 I call it <strong>404 to 302</strong>.
@@ -55,6 +57,7 @@ There are three ‘versions’ of this site:
 On A and B, I have added the following <strong>404 → 302</strong> mappings:
 
   * A (404) → B
+
   * B (404) → C
 
 On C, if there’s a 404, the Internet Archive will show it’s 404 page and thus end the chain.
@@ -64,10 +67,15 @@ On C, if there’s a 404, the Internet Archive will show it’s 404 page and thu
 Here’s a more verbose explanation of the flow:
 
   1. If a URL is found on this site, it is rendered.
+
   2. If a URL is not found on this site, instead of a raising a 404 (not found) error, it issues a 302 (temporary redirect) to the earlier version of the site (2017.4042302.org)
+
   3. If the URL is found on the earlier version of the site, it is displayed
+
   4. If the URL is not found on the earlier version of the site, that site also has a 404 → 302 mapping that maps the request to the Internet Archive’s snapshot of my Geocities site.
+
   5. If the URL is found on the Internet Archive, it is displayed.
+
   6. If the URL is not found on the Internet Archive, the Internet Archive displays its 404 page.
 
 This is a contrived example but it should be enough to demonstrate how you can use this technique on your own web sites.
