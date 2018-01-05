@@ -2,11 +2,13 @@
 
 A simple gesture for an evergreen Web.
 
-```# nginx
+```nginx
+# nginx
 location / {
 error_page 404 =302 https://2017.4042302.org$request_uri;
 try_files $uri $uri/ =404;
-}```
+}
+```
 
 **What if links never died?** What if we never broke the Web? What if it didn’t involve any extra work?
 
