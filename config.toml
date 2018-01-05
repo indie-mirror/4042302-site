@@ -19,13 +19,23 @@ theme = "minimal"
 
 [[menu.main]]
     url = "/"
-    name = "Home"
+    name = "What?"
     weight = 1
 
 [[menu.main]]
-    url = "/details/"
-    name = "Details"
+    url = "/why/"
+    name = "Why?"
     weight = 2
+
+[[menu.main]]
+    url = "/how/"
+    name = "How?"
+    weight = 3
+
+[[menu.main]]
+    url = "/contribute/"
+    name = "Get involved!"
+    weight = 4
 
 # Social icons to be shown on the right-hand side of the navigation bar
 # The "name" field should match the name of the icon to be used
