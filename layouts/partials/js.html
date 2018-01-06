@@ -1,0 +1,19 @@
+<!-- highlight.js -->
+{{ if .Site.Params.highlight | default false }}
+
+    <script src="/js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+{{ end }}
+
+<!-- custom -->
+{{ range .Site.Params.js }} <script src="{{ . }}"></script> {{ end }}
+
+<!-- jquery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- bootstrap -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- dismiss expanded navigation bar with click -->
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
