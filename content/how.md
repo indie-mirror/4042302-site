@@ -1,7 +1,7 @@
 ---
 title: "How?"
 date: 2018-01-05T21:01:29+01:00
-draft: true
+draft: false
 ---
 
 1. Backup your current site to a subdomain (e.g., `2017.your.site`).
