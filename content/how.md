@@ -26,6 +26,6 @@ server {
 
 For example, if your site uses [Let’s Encrypt](https://letsencrypt.org) on Ubuntu, you should find your site configuration file in `/etc/nginx/sites-available/https.conf`.
 
-## Other platforms
+## Contribute
 
 [Edit this page on GitHub](https://github.com/indie-mirror) to contribute 404 → 302 configurations for your favourite servers and platforms and send us a pull request.
