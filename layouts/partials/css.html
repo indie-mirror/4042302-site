@@ -19,10 +19,10 @@
 {{ range .Site.Params.css }} <link rel="stylesheet" href="{{ . }}"> {{ end }}
 
 <!-- highlight.js -->
-{{ if .Site.Params.highlight | default false }} <link rel="stylesheet" href="/css/highlight.min.css"> {{ end }}
+{{ if .Site.Params.highlight | default false }} <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/highlight.min.css"> {{ end }}
 
 <!-- bootstrap -->
-<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/bootstrap.min.css">
 
 <!-- font awesome -->
-<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/font-awesome.min.css">
