@@ -20,19 +20,19 @@ Soon, it’ll be my own [Indienet](https://source.ind.ie/indienet) site.
 
 The Geocities site lives on only thanks to the [Internet Achieve](http://archive.org) (thanks [Brewster](http://brewster.kahle.org)) as does the Tripod page. I’m glad they’re still there (so embarrassing, but we all had to start somewhere!) But the original URLs today are broken. I couldn’t do anything about that because, just like my Facebook or Twitter profile today, they were never mine. I was just renting them from those companies and, when they went away, they took that part of the Web with them. My own site (and [my Mastodon](https://mastodon.ar.al)), on the other hand, are mine and, among other things, I get to decide if they live or die.
 
-Once I had my own domain [aralbalkan.com](https://aralbalkan.com) and now [ar.al](https://ar.al)), I was able to be more thoughtful.
+Once I had my own domain, I was able to be more thoughtful.
 
 I didn’t want to break the Web when I went from b2 to Wordpress. But that took some work. I had to write [a b2 to Wordpress migration script](https://ar.al/588/).
 
 Then, when I went from Wordpress to my own hand-rolled static site generator, I had to again write code to process [my legacy content](https://ar.al/archive/) and make sure I maintained the URLs. That took some work also. It wasn’t trivial.
 
-(And, when I went from aralbalkan.com to ar.al, I had to keep a web server running at aralbalkan.com to forward the HTTPS calls to the new domain.)
+(And, when I changed my domain from [aralbalkan.com](https://aralbalkan.com) to [ar.al](https://ar.al), I had to keep a web server running at aralbalkan.com to forward the HTTPS calls to the new domain.)
 
-Soon, my personal site will change completely as it becomes a federated personal site. So it’s going to go from a static web site to a Node.js application. I don’t want to break the Web but I also don’t want to burden the new system I’m building with a means to handle legacy static content.
+Soon, my personal site will change completely as it becomes a federated personal site. So it’s going to go from a static web site to a Node.js application. I don’t want to break the Web but I also don’t want to burden the new system I’m building with a means to handle legacy static content. And yet, this is also an important use case that I cannot ignore.
 
 So what’s a developer to do?
 
-Here’s the solution I came up with:
+Here’s the simplest solution I could come up with:
 
 1. Backup the current site to a subdomain (e.g., `2017.ar.al`)
 
@@ -40,21 +40,21 @@ Here’s the solution I came up with:
 
 3. If I change the site again in the future, rinse and repeat.
 
-I call it <strong>404 to 302</strong>.
+I call the technique <strong>404 to 302</strong>.
 
 ## Example
 
-This site is a contrived example of the 404 to 302 technique.
+This site is designed as a contrived example of the 404 to 302 technique.
 
 There are three ‘versions’ of this site:
 
-  * <strong>A:</strong> <a href='https://4042302.org'>4042302.org</a> is the latest version that you’re reading now. It’s a static site, being served with nginx.
+  * **A:** [4042302.org](https://4042302.org) is the latest version that you’re reading now. It’s a static site, being served with nginx.
 
-  * <strong>B:</strong> <a href='https://2017.4042302.org'><strong>2017.</strong>4042302.org</a> is a fictitious previous version of the site. It is also a static site being served by different nginx server. (But it could easily have been a dynamic site being served by Node.js, for example.)
+  * **B:** [**2017.**4042302.org](https://2017.4042302.org) is a fictitious previous version of the site. It is also a static site being served by different nginx server. (But it could easily have been a dynamic site being served by Node.js, for example.)
 
-  * <strong>C:</strong> The oldest version is <a href='https://web.archive.org/web/20030319083157/http://www.geocities.com:80/broadway/1085/'>my Geocities site from 1997</a>, and it is served by <a href='http://archive.org'>the Internet Archive</a>.
+  * **C:** The oldest ‘version’ is [my Geocities site from 1997](https://web.archive.org/web/20030319083157/http://www.geocities.com:80/broadway/1085/), as served by [the Internet Archive](http://archive.org).
 
-On A and B, I have added the following <strong>404 → 302</strong> mappings:
+On A and B, I have added the following <strong>404 → 302</strong> mappings to my [nginx configuration](/how#nginx):
 
   * A (404) → B
 
