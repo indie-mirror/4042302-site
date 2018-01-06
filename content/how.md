@@ -16,9 +16,7 @@ In your site configuration (e.g., for a site that uses [Let’s Encrypt](https:/
 
 ```nginx
 server {
-
   # …
-
   location / {
     error_page 404 =302 https://2017.your.site$request_uri;
     try_files $uri $uri/ =404;
