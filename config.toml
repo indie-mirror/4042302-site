@@ -38,11 +38,16 @@ theme = "minimal"
 [[menu.icon]]
     url = "mailto:hello@ind.ie"
     name = "envelope-o"
+    weight = 4
+
+[[menu.icon]]
+    url = "https://source.ind.ie/indienet/4042302.org"
+    name = "git"
     weight = 1
 
 [[menu.icon]]
-    url = "https://github.com/username/"
-    name = "git"
+    url = "https://github.com/indie-mirror/"
+    name = "github"
     weight = 2
 
 [[menu.icon]]
