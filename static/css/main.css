@@ -34,11 +34,12 @@ footer {
 
 .intro > h1 {
     color: #212121;
-    font-size: 12vh;
+    font-size: 12vmin;
 }
 
 .intro > h2 {
     color: #757575;
+    margin-top: 1vmin;
     font-size: 3vmin;
 }
 
@@ -105,5 +106,5 @@ img {
 
 h1 {
   text-align: center;
-  font-size: 12vh !important;
+  font-size: 12vh;
 }
