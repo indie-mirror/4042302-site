@@ -60,7 +60,7 @@ On A and B, I have added the following <strong>404 → 302</strong> mappings to 
 
   * B (404) → C
 
-On C, if there’s a 404, the Internet Archive will show it’s 404 page and thus end the chain.
+On C, if there’s a 404, the Internet Archive will show its 404 page and thus end the chain.
 
 ## In detail
 
