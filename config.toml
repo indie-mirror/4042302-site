@@ -41,7 +41,7 @@ theme = "minimal"
     weight = 4
 
 [[menu.icon]]
-    url = "https://source.ind.ie/indienet/4042302.org"
+    url = "https://source.ind.ie/indienet/4042302/"
     name = "git"
     weight = 1
 
