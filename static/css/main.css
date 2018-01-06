@@ -1,6 +1,21 @@
 html, body {
     height: 100%;
+    font-size: 20px;
+    line-height: 1.4em;
 }
+
+p {
+  margin-bottom: 1.25em;
+}
+
+li > p {
+  margin-bottom: 0.5em;
+}
+
+li:last-child > p {
+  margin-bottom: 1.25em;
+}
+
 
 body {
     padding-top: 55px;
@@ -20,6 +35,7 @@ main {
 
 footer {
   text-align: center;
+  font-size: 16px;
 }
 
 .copyright {
@@ -107,4 +123,12 @@ img {
 h1 {
   text-align: center;
   font-size: 12vh;
+}
+
+h2 {
+  margin-top: 1.25em;
+}
+
+pre {
+  margin-bottom: 2em;
 }
