@@ -23,3 +23,7 @@ Just make your 404s into 302s.
   * Read: [How?](https://4042302.org/how)
 
 [Get involved](https://4042302.org/how#contribute) and help out.
+
+---
+
+**Canonical Git Remote:** https://source.ind.ie/indienet/4042302/site
