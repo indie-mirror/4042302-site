@@ -28,4 +28,4 @@ For example, if your site uses [Let’s Encrypt](https://letsencrypt.org) on Ubu
 
 ## Contribute
 
-[Edit this page on GitHub](https://github.com/indie-mirror) to contribute 404 → 302 configurations for your favourite servers and platforms and send us a pull request.
+[Edit this page on GitHub](https://github.com/indie-mirror/4042302-site/blob/master/content/how.md) to contribute 404 → 302 configurations for your favourite servers and platforms and send us a pull request.
