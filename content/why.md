@@ -68,18 +68,18 @@ Here’s a more verbose explanation of the flow:
 
   1. If a URL is found on this site, it is rendered.
 
-  2. If a URL is not found on this site, instead of a raising a 404 (not found) error, it issues a 302 (temporary redirect) to the earlier version of the site (2017.4042302.org)
+  2. If a URL is not found on this site, instead of a raising a 404 (not found) error, we issue a 302 (temporary redirect) to the earlier version of the site (2017.4042302.org). We use a 302 and not a 301 (permanent redirect) because we want the latest site to have the chance to override the URL in the future.
 
-  3. If the URL is found on the earlier version of the site, it is displayed
+  3. If the URL is found on the earlier version of the site, it is displayed by that site.
 
-  4. If the URL is not found on the earlier version of the site, that site also has a 404 → 302 mapping that maps the request to the Internet Archive’s snapshot of my Geocities site.
+  4. If the URL is not found on the earlier version of the site, that site also has a 404 → 302 mapping that forwards the request to the Internet Archive’s snapshot of my Geocities site.
 
   5. If the URL is found on the Internet Archive, it is displayed.
 
-  6. If the URL is not found on the Internet Archive, the Internet Archive displays its 404 page.
+  6. If the URL is not found on the Internet Archive, the Internet Archive displays its own 404 page.
 
 This is a contrived example but it should be enough to demonstrate how you can use this technique on your own web sites.
 
-So this is my solution and I’m documenting it here because I feel that if we all adopted it, we could make this the de facto way to foster an evergreen Web.
+So this is my solution and I’m documenting it here because I feel that if enough of us adopted it, we could make this the de facto way to foster an evergreen Web.
 
-Next: read about how to implement it for nginx servers and how you can get involved to contribute code for implementing on other servers (and even in serverless architectures).
+**Next:** [How?](/how)
