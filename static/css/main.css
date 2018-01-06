@@ -18,6 +18,10 @@ main {
 
 /*footer*/
 
+footer {
+  text-align: center;
+}
+
 .copyright {
     margin: 15px 0;
 }
