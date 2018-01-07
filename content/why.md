@@ -4,7 +4,7 @@ date: 2018-01-05T21:01:29+01:00
 draft: false
 ---
 
-[My first web site](https://web.archive.org/web/20030319083157/http://www.geocities.com:80/broadway/1085/) was hosted on [Geocities](https://en.wikipedia.org/wiki/Yahoo!_GeoCities).
+[My first web site](https://1997.4042302.org) was hosted on [Geocities](https://en.wikipedia.org/wiki/Yahoo!_GeoCities).
 
 Then [Tripod](https://web.archive.org/web/20040811232124/http://aral.tripod.com:80/).
 
@@ -48,11 +48,17 @@ This site is designed as a contrived example of the 404 to 302 technique.
 
 There are three ‘versions’ of this site:
 
-  * **A:** [4042302.org](https://4042302.org) is the latest version that you’re reading now. It’s a static site, being served with nginx.
+### **A:** [4042302.org](https://4042302.org)
 
-  * **B:** [**2017.**4042302.org](https://2017.4042302.org) is a fictitious previous version of the site. It is also a static site being served by different nginx server. (But it could easily have been a dynamic site being served by Node.js, for example.)
+  The latest version that you’re reading now. It’s a static site, being served with nginx.
 
-  * **C:** The oldest ‘version’ is [my Geocities site from 1997](https://web.archive.org/web/20030319083157/http://www.geocities.com:80/broadway/1085/), as served by [the Internet Archive](http://archive.org).
+### **B:** [**2017.**4042302.org](https://2017.4042302.org)
+
+  A fictitious previous version of the site. It is also a static site being served by different nginx server. (But it could easily have been a dynamic site being served by Node.js, for example.)
+
+### **C:** [**1997.**4042302.org](https://1997.4042302.org)
+
+  The oldest ‘version’ is [my Geocities site from 1997](https://1997.4042302.org) that I downloaded from  [The Internet Archive](https://archive.org) using [Wayback Machine Downloader](https://github.com/hartator/wayback-machine-downloader).
 
 On A and B, I have added the following <strong>404 → 302</strong> mappings to my [nginx configuration](/how#nginx):
 
@@ -60,7 +66,7 @@ On A and B, I have added the following <strong>404 → 302</strong> mappings to 
 
   * B (404) → C
 
-On C, if there’s a 404, the Internet Archive will show its 404 page and thus end the chain.
+On C, if there’s a 404, we show a 404 page and thus end the chain.
 
 ## In detail
 
@@ -72,11 +78,11 @@ Here’s a more verbose explanation of the flow:
 
   3. If the URL is found on the earlier version of the site, it is displayed by that site.
 
-  4. If the URL is not found on the earlier version of the site, that site also has a 404 → 302 mapping that forwards the request to the Internet Archive’s snapshot of my Geocities site.
+  4. If the URL is not found on the earlier version of the site, that site also has a 404 → 302 mapping that forwards the request to The Internet Archive’s snapshot of my Geocities site (1997.4042302.org).
 
-  5. If the URL is found on the Internet Archive, it is displayed.
+  5. If the URL is found on my Geocities site, it is displayed.
 
-  6. If the URL is not found on the Internet Archive, the Internet Archive displays its own 404 page.
+  6. If the URL is not found, the Geocities site displays its 404 page.
 
 This is a contrived example but it should be enough to demonstrate how you can use this technique on your own web sites.
 
