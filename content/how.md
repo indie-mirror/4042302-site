@@ -4,9 +4,9 @@ date: 2018-01-05T21:01:29+01:00
 draft: false
 ---
 
-1. Backup your current site to a subdomain (e.g., `2017.your.site`).
+1. Serve your current site from a subdomain (e.g., `2017.your.site`).
 
-2. Add a 404 to 302 rule (see below) to your latest version.
+2. Add a 404 to 302 rule (see below) to the latest version of your site to forward links that are not found on the latest version to the previous version.
 
 3. If you change the site again in the future, rinse and repeat.
 
