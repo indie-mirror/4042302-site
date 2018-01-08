@@ -34,7 +34,7 @@ So what’s a developer to do?
 
 Here’s the simplest solution I could come up with:
 
-1. Backup the current site to a subdomain (e.g., `2017.ar.al`)
+1. Serve the current site from a subdomain (e.g., `2017.ar.al`)
 
 2. Make my 404s into 302s that point to the previous version of the site.
 
