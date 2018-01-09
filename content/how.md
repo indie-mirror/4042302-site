@@ -12,7 +12,7 @@ There are three ‘versions’ of this site, being served from three different s
 
     This site. The latest version that you’re viewing right now. It’s a static site, being served with nginx.
 
-2. [**www.**](https://2017.4042302.org)4042302.org
+2. [**2017.**](https://2017.4042302.org)4042302.org
 
     A fictitious previous version of the site. It is also a static site being served by different nginx server. (But it could easily have been a dynamic site being served by Node.js, for example.)
 
