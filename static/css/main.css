@@ -12,10 +12,21 @@ li > p {
   margin-bottom: 0.5em;
 }
 
-li:last-child > p {
-  margin-bottom: 1.25em;
+li + li {
+  margin-top: 1.25em;
 }
 
+p + ol, p + ul {
+  margin-top: 2em;
+}
+
+ol + p, ul + p {
+  margin-top: 2em;
+}
+
+.nav li + li { margin-top: inherit }
+.index li + li { margin-top: 0.25em}
+.index p + ol, .index p + ul { margin-top: inherit; }
 
 body {
     padding-top: 55px;

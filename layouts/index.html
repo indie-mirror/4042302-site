@@ -10,13 +10,15 @@
 
       <h2 style='margin-bottom: 1em;'>{{ markdownify .Site.Params.Description }}</h2>
 
-      <pre style='margin-bottom: 2em;'><code style='text-align: left;'># nginx
+      <pre style='margin-bottom: 2em;'><code style='text-align: left;'>#
+# nginx configuration on 4042302.org
+#
 location / {
   error_page 404 =302 https://2017.4042302.org$request_uri;
   try_files $uri $uri/ =404;
 }</code></pre>
 
-    <div class='details' style='text-align: left;'>
+    <div class='details index' style='text-align: left;'>
       <p><strong>What if links never died?</strong> What if <a href='https://www.w3.org/Provider/Style/URI'>we never broke the Web?</a> What if it didn’t involve any extra work?</p>
       <p>It’s possible. And <em>easy.</em></p>
       <p>Just make your 404s into 302s.</p>
@@ -30,7 +32,8 @@ location / {
     <p><strong>Learn more:</strong></p>
     <ul>
       <li><a href='/why'>Why</a> is this important?</li>
-      <li><a href='/how'>How</a> do I implement it?</li>
+      <li><a href='/how'>How</a> does it work?</li>
+      <li><a href='/get-started'>Get started!</a></li>
     </ul>
     </div>
 
